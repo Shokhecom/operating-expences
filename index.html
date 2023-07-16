@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Operating Expenses Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Operating Expenses Calculator</h1>
+    
+    <form id="expense-form">
+      <label for="category">Expense Category:</label>
+      <select id="category" required>
+        <option value="" selected disabled>Select an expense category</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Rent">Rent</option>
+        <option value="Supplies">Supplies</option>
+        <!-- Add more expense categories here -->
+      </select>
+      
+      <label for="amount">Expense Amount:</label>
+      <input type="number" id="amount" required>
+      
+      <button type="submit">Add Expense</button>
+    </form>
+    
+    <div id="expense-list">
+      <h2>Expense List:</h2>
+      <ul id="expenses"></ul>
+      <h3>Total Expenses: $<span id="total-expenses">0.00</span></h3>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
